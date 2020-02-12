@@ -5,9 +5,9 @@ public class printDecInc {
 
     public static void main(String[] args) {
         int n = s.nextInt();
-//        PdI(n);
-        int ans = fib(n);
-        System.out.println(ans);
+        PdI(n);
+//        int ans = fib(n);
+//        System.out.println(ans);
     }
 
     private static void PdI(int n) {
