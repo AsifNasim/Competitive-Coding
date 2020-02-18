@@ -7,19 +7,19 @@ public class Ques_19_spiralClock {
         int row = s.nextInt();
         int col = s.nextInt();
         int [][] arr =new int[row][col];
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
                 arr[i][j] = s.nextInt();
             }
         }
-        spiralClock(arr);
+        spiralClock(arr, row, col);
     }
 
-    private static void spiralClock(int[][] arr) {
+    private static void spiralClock(int[][] arr, int row , int col) {
         int top = 0;
         int left = 0;
-        int bottom = arr.length -1;
-        int right = arr[0].length -1;
+        int bottom = row-1;
+        int right = col-1;
         while (top <= bottom && left <= right) {
             for (int i = left; i <= right; i++) {
                 System.out.print(arr[top][i] + ", ");

@@ -16,19 +16,13 @@ public class revisingQuadraticEquation {
         int root_1 = (-b +underRoot )/2*a;
         int root_2 = (-b - underRoot )/ 2*a;
 
-        if(root_1 == root_2){
+        if(d == 0){
             System.out.println("Real and Equal");
             System.out.println(root_1+" "+root_2);
         }
-        if(root_1 != root_2){
-            if(root_1 < root_2){
-                System.out.println("Real and Distinct");
+        else if(d > 0){
+               System.out.println("Real and Distinct");
                 System.out.println(root_1+" "+root_2);
-            }
-            else{
-                System.out.println("Real and Distinct");
-                System.out.println(root_2+" "+root_1);
-            }
         }
         else {
             System.out.println("Imaginary");

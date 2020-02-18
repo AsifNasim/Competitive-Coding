@@ -10,19 +10,21 @@ public class patternHollowRhombus {
                 System.out.print(" ");
                 space++;
             }
-            int col = 1;
-            while(col <= row){
-                if(row == 1 || row == n && col <= row){
+            int star = 1;
+            while(star <= n){
+                if(row == 1 || row == n){
                     System.out.print("*");
-                    col++;
                 }
-                else {
+                else if((row > 1 || row < n) && (star>1 && star <n)){
                     System.out.print(" ");
-                    col++;
                 }
-                System.out.println();
-                row++;
+                else{
+                    System.out.print("*");
+                }
+                star++;
             }
+            row++;
+            System.out.println();
         }
     }
 }
