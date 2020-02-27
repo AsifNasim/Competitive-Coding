@@ -33,7 +33,7 @@ public class Ques_19_spiralClock {
             right--;
 
             for (int i = right; i >= left ; i--) {
-                System.out.print(arr[bottom][i]+", ");
+                System.out.print(arr[bottom][i] + ", ");
             }
 
             bottom--;

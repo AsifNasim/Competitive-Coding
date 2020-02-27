@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/Lec_6_Strings/Lec_6_Strings.iml" filepath="$PROJECT_DIR$/Lec_6_Strings/Lec_6_Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lec_7_StringBuilder_Recursion/Lec_7_StringBuilder_Recursion.iml" filepath="$PROJECT_DIR$/Lec_7_StringBuilder_Recursion/Lec_7_StringBuilder_Recursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lec_9_Recursion/Lec_9_Recursion.iml" filepath="$PROJECT_DIR$/Lec_9_Recursion/Lec_9_Recursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_12_BitManipulation/Lect_12_BitManipulation.iml" filepath="$PROJECT_DIR$/Lect_12_BitManipulation/Lect_12_BitManipulation.iml" />
     </modules>
   </component>
 </project>

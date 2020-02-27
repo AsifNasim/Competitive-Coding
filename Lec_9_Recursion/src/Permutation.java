@@ -5,7 +5,7 @@ public class Permutation {
 
     public static void main(String[] args) {
         String processed = "";
-        String unprocessed = "abc";
+        String unprocessed = s.nextLine();
         subSeq(processed,unprocessed);
     }
 

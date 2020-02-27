@@ -18,39 +18,31 @@ public class Ques_9_armStrongNumber {
             x = x/10;
         }
         int sum = 0;
-        while ( y >0){
-            int lastDigit = y%10;
-            int prod = 1;
-            int i = count;
-            while ( i > 0){
-                prod *= lastDigit;
-                i--;
-            }
-            y = y/10;
-            sum += prod;
-        }
-        if(sum == n){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    private static boolean isArmstrong(int n){
-        int result = 0;
-        int num =n;
-        while ( n != 0){
+        while(n > 0){
             int lastDigit = n%10;
-            result += (lastDigit*lastDigit*lastDigit);
-            n /= 10;
+            sum += (int)Math.pow(lastDigit,count);
+            n = n/10;
         }
-        if(result == num){
+//        while ( y >0){
+//            int lastDigit = y%10;
+//            int prod = 1;
+//            int i = count;
+//            while ( i > 0){
+//                prod *= lastDigit;
+//                i--;
+//            }
+//            y = y/10;
+//            sum += prod;
+//        }
+        if(sum == y){
             return true;
         }
         else{
             return false;
         }
     }
+
+
 
 
 
