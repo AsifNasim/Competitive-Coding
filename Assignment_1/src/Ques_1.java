@@ -20,17 +20,14 @@ public class Ques_1 {
             while (col <= (2*row)-1){
                 if(col >= row-1){
                     val = val-1;
-                    System.out.print(val);
-
-                    col++;
+                    System.out.print(val+1);
                 }
                else {
 
                     System.out.print(val);
                     val++;
-                    col++;
                 }
-
+                col++;
             }
             System.out.println();
             row++;

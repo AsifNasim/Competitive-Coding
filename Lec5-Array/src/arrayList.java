@@ -7,7 +7,10 @@ public class arrayList {
         list.add(9);
         list.add(91);
         list.add(98);
-        System.out.println(list.get(0));
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
         System.out.println(list.remove(0));
 
         System.out.println(list);

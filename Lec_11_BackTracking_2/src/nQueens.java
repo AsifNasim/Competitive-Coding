@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 public class nQueens {
+    static int count =0;
     static Scanner s = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int row = s.nextInt();
-        int col = s.nextInt();
-        boolean [][] board = new boolean[row][col];
+        int n = s.nextInt();
+        boolean [][] board = new boolean[n][n];
         nQueensProb(board,0);
-        print(board);
+        System.out.println(count);
+
     }
 
     private static void print(boolean [][] arr){
@@ -28,7 +29,8 @@ public class nQueens {
 
     private static void nQueensProb(boolean[][] board, int row) {
         if(row == board.length){
-            System.out.println(board);
+            count++;
+            print(board);
             return;
         }
         for (int col = 0; col < board.length; col++) {
@@ -48,12 +50,12 @@ public class nQueens {
         }
 
         int left = Math.min(row ,col);
-        for (int i = 0; i <= left; i++) {
+        for (int i = 1; i <= left; i++) {
             if(board[row-i][col-i]){
                 return false;
             }
         }
-        int right = Math.min(row, board.length-1-col);
+        int right = Math.min(row, board.length-col - 1);
         for (int i = 1; i <= right; i++) {
             if(board[row-i][col+i]){
                 return false;

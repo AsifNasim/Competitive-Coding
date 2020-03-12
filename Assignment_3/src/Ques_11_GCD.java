@@ -13,7 +13,7 @@ public class Ques_11_GCD {
     }
     private static int gcdOfTwoNos(int num1, int num2){
         int GCD = -1;
-        int i =2;
+        int i =1;
         while ( i < maxNum(num1, num2)){
             if(num1%i ==0 && num2%i == 0){
                 GCD = i;
