@@ -230,6 +230,75 @@ public class LinkedList {
 
     }
 
+    public int kthFromLast(int k){
+        Node slow = head;
+        Node fast = head;
+        for (int i = 0; i < k; i++) {
+            fast = fast.next;
+        }
+
+        while(fast.next!= null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        return slow.value;
+    }
+
+    public LinkedList OddEven(LinkedList list){
+        LinkedList Odd = new LinkedList();
+        LinkedList Even = new LinkedList();
+        Node temp = head;
+        while (temp!= null){
+            if(temp.value%2 != 0){
+                Odd.insertLast(temp.value);
+
+            }
+            else{
+                Odd.insertLast(temp.value);
+            }
+            temp = temp.next;
+        }
+        Odd.tail.next = Even.head;
+        Odd.tail = Even.tail;
+        return Odd;
+    }
+
+    public void  OddEvenBetter(){
+    Node odd_head = null;
+    Node odd_tail = null;
+    Node even_head = null;
+    Node even_tail = null;
+    Node temp = head;
+    while(temp != null){
+        if(temp.value%2 != 0){
+            if(odd_head == null){
+                odd_head = temp;
+                odd_tail = temp;
+            }
+            else{
+                odd_tail.next = temp;
+                odd_tail = temp;
+            }
+        }
+        else{
+            if(even_head == null){
+                even_head = temp;
+                even_tail = temp;
+            }
+            else{
+                even_tail.next = temp;
+                even_tail = temp;
+            }
+        }
+        temp = temp.next;
+    }
+        odd_tail.next = even_head;
+        head = odd_head;
+        tail = even_tail;
+        tail.next= null;
+
+    }
     public void display(){
         Node temp = head;
         while(temp!= null){

@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class QuickSort {
@@ -21,7 +22,8 @@ public class QuickSort {
         if(end<= start){
             return;
         }
-        int pivot = end -1;
+        Random rand = new Random();
+        int pivot = rand.nextInt(end -start)+start;               //end -1; // assuming pivot as last element of the sorted array
         pivot = pivotChange(arr, start,pivot);
         quickSort(arr, start, pivot);
         quickSort(arr, pivot+1, end);
@@ -30,7 +32,7 @@ public class QuickSort {
     private static int pivotChange(int[] arr, int start, int pivot ) {
         int j = start;
         for (int i = start; i < pivot; i++) {
-            if(arr[i]< pivot){
+            if(arr[i]< arr[pivot]){
                 swap(arr, i,j);
                 j++;
             }

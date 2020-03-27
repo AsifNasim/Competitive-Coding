@@ -27,8 +27,11 @@ public class LinkedListClient {
     list.display();
 //        System.out.println(list.mid());
 //    list.reverseList();
-        list.mergeSort(list);
-        list.display();
+//        list.mergeSort(list);
+//        list.display();
+        System.out.println(list.kthFromLast(2));
+//        System.out.println(list.OddEven(list));
+        System.out.println(list.OddEvenBetter(list));
     }
 
 

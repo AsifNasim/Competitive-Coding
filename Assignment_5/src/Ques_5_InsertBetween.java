@@ -8,18 +8,21 @@ public class Ques_5_InsertBetween {
     public static void main(String[] args) {
         String str = s.nextLine();
 
-        /*StringBuilder ans*/ insertBetween(str);
+        /*StringBuilder ans*/
+        System.out.println(insertBetween(str));
 //        System.out.println(ans);
     }
 
-    private static void insertBetween(String str) {
-        StringBuilder sb = new StringBuilder(str);
-        for (int i = 0; i <= sb.length()+1; i+=2) {
-            char ch = sb.charAt(i);
-            char ch1 = sb.charAt(i+1);
-            sb.insert(i+1,(int)(ch1-ch));
+    private static String insertBetween(String str) {
+
+        String ans ="";
+        for (int i = 0; i < str.length()-1; i++) {
+            char ch = str.charAt(i);
+            char ch1 = str.charAt(i+1);
+            ans += (char)ch+""+(ch1-ch);
         }
-        System.out.println(sb);
+        ans += (char)str.charAt(str.length()-1);
+        return ans;
     }
 
 }

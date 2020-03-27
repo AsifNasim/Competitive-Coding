@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class BalancedParenthesis {
     static Scanner s = new Scanner(System.in);
-    public static void main(String[] args) throws stackfullException, stackEmptyException {
+    public static void main(String[] args) throws Exception {
 
 //            int size = s.nextInt();
 //            char [] exp = new char[size];
@@ -11,8 +11,8 @@ public class BalancedParenthesis {
         System.out.println(isBal);
     }
 
-    private static boolean isBalanced(String str) throws stackfullException, stackEmptyException {
-        StackUsingArray2 stack = new StackUsingArray2();
+    private static boolean isBalanced(String str) throws Exception {
+        StackUsingArrays stack = new StackUsingArrays();
         for (int i = 0; i <str.length() ; i++) {
             if(str.charAt(i)== '(' || str.charAt(i) == '{' || str.charAt(i) == '['){
               stack.push(str.charAt(i));
@@ -21,8 +21,8 @@ public class BalancedParenthesis {
                 if(stack.isEmpty()){
                     return false;
                 }
-                char ch = (char) stack.top();
-                stack.pop();
+                char ch = (char) stack.pop();
+
                 if(str.charAt(i) == ')' && ch =='('){
                     continue;
                 }
