@@ -45,6 +45,10 @@ static int max = Integer.MIN_VALUE;
     }
 
     private int count(Node root) {
+        // only when the user give root as null
+        if(root == null){ //edge cases not the base case
+            return 0;
+        }
         int cnt = 1;
         for (int i = 0; i < root.children.size(); i++) {
             cnt += count(root.children.get(i));
@@ -66,6 +70,19 @@ static int max = Integer.MIN_VALUE;
         }
     }
 
+    public int countRecursive(){
+        return countRecursive(root);
+    }
+
+    private int countRecursive(Node root){
+        int cnt = 1;
+        for (int i = 0; i < root.children.size(); i++) {
+            cnt += count(root.children.get(i));
+        }
+
+        return cnt;
+    }
+
     public  void maxNode(){
 
         System.out.println(max);
@@ -76,12 +93,121 @@ static int max = Integer.MIN_VALUE;
         queue.add(root);
         while (!queue.isEmpty()){
             Node temp = queue.remove();
-            System.out.print(temp.value);
+            System.out.print(temp.value+" ");
             for (int i = 0; i <temp.children.size() ; i++) {
                 queue.add(temp.children.get(i));
             }
         }
+        System.out.println();
+    }
+    public int sumOfAllNodes(){
+        return sumOfAllNodes(root);
+    }
+    private int sumOfAllNodes(Node root){
+        int sum = root.value;
+        for (int i = 0; i < root.children.size(); i++) {
+            sum += sumOfAllNodes(root.children.get(i));
+        }
+        return sum;
     }
 
+    public int largestNode(){
+        return largestNode(root);
+
+    }
+
+    private int largestNode(Node root) {
+        if(root == null){
+            return Integer.MIN_VALUE;
+        }
+        int largest = root.value;
+        for (int i = 0; i < root.children.size(); i++) {
+            int childLargest = largestNode(root.children.get(i));
+            if(childLargest > largest){
+                largest = childLargest;
+            }
+        }
+        return largest;
+    }
+    public int greaterThanX(int x){
+        return greaterThanX(x, root);
+    }
+
+    private int greaterThanX(int x, Node root) {
+        int count = 0;
+        if(root == null){
+            return 0;
+        }
+        if(root.value > x){
+            count++;
+        }
+        for (int i = 0; i < root.children.size(); i++) {
+            count += greaterThanX(x,root.children.get(i));
+        }
+        return count;
+    }
+    public int height(){
+        return height(root);
+    }
+
+    private int height(Node root) {
+        int ans = 0;
+        if(root == null){
+            return 0;
+        }
+        for (int i = 0; i < root.children.size(); i++) {
+            int childHeight= height(root.children.get(i));
+            if(childHeight > ans){
+                ans = childHeight;
+            }
+        }
+        return ans+1;
+    }
+
+    public void depth(int k){
+        depth(root, k);
+    }
+
+    private void depth(Node root, int k) {
+        if(k < 0){
+            return;
+        }
+        if(k == 0){
+            System.out.print(root.value+" ");
+        }
+        for (int i = 0; i < root.children.size(); i++) {
+            depth(root.children.get(i), k-1);
+        }
+    }
+
+    public void preOrderTraversal(){
+        preOrderTraversal(root);
+    }
+
+    private void preOrderTraversal(Node root) {
+        System.out.println(root.value);
+        for (int i = 0; i < root.children.size(); i++) {
+            preOrderTraversal(root.children.get(i));
+        }
+    }
+
+    public int countLeafNodes(){
+        return countLeafNodes(root);
+    }
+
+    private int countLeafNodes(Node root) {
+        if(root == null){
+            return 0;
+        }
+        if(root.children.size() == 0){
+            return 1;
+        }
+        int count = 0;
+        for (int i = 0; i < root.children.size(); i++) {
+            count += countLeafNodes(root.children.get(i));
+
+        }
+        return count;
+    }
 
 }
