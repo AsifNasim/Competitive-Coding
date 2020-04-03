@@ -7,8 +7,7 @@ public class BinaryTree {
         Node right;
         public Node(int value){
             this.value = value;
-        }
-    }
+        }}
     private Node root;
 
     public void insert(Scanner s){
@@ -46,4 +45,42 @@ public class BinaryTree {
         display(root.left,indent+"\t");
         display(root.right,indent+"\t");
     }
+    public void postDisplay(){
+        postDisplay(root, "");
+    }
+
+    private void postDisplay(Node root, String indent) {
+        if(root == null){
+            return;
+        }
+        postDisplay(root.left, indent+"\t");
+        postDisplay(root.right, indent+"\t");
+        System.out.println(root.value);
+    }
+
+    public void inOrder(){
+        inOrder(root, "");
+    }
+
+    private void inOrder(Node root, String indent) {
+        if(root  == null){
+            return;
+        }
+        inOrder(root.left, indent+"\t");
+        System.out.println(root.value);
+        inOrder(root.right, indent+"\t");
+    }
+
+    public int  height(){
+        return height(root);
+    }
+
+    private int height(Node root) {
+        if(root == null){
+            return 0;
+        }
+        return Math.max(height(root.left), height(root.right))+1;
+    }
+
+
 }
