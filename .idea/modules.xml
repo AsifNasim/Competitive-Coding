@@ -23,7 +23,10 @@
       <module fileurl="file://$PROJECT_DIR$/Lect_12_BitManipulation/Lect_12_BitManipulation.iml" filepath="$PROJECT_DIR$/Lect_12_BitManipulation/Lect_12_BitManipulation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lect_14_OOPs/Lect_14_OOPs.iml" filepath="$PROJECT_DIR$/Lect_14_OOPs/Lect_14_OOPs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lect_20_GenericTree/Lect_20_GenericTree.iml" filepath="$PROJECT_DIR$/Lect_20_GenericTree/Lect_20_GenericTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_21_BinaryTree/Lect_21_BinaryTree.iml" filepath="$PROJECT_DIR$/Lect_21_BinaryTree/Lect_21_BinaryTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_25_Heap/Lect_25_Heap.iml" filepath="$PROJECT_DIR$/Lect_25_Heap/Lect_25_Heap.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOPs_Practice/OOPs_Practice.iml" filepath="$PROJECT_DIR$/OOPs_Practice/OOPs_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
 </project>
