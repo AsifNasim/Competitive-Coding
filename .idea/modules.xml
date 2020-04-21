@@ -24,9 +24,12 @@
       <module fileurl="file://$PROJECT_DIR$/Lect_14_OOPs/Lect_14_OOPs.iml" filepath="$PROJECT_DIR$/Lect_14_OOPs/Lect_14_OOPs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lect_20_GenericTree/Lect_20_GenericTree.iml" filepath="$PROJECT_DIR$/Lect_20_GenericTree/Lect_20_GenericTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lect_21_BinaryTree/Lect_21_BinaryTree.iml" filepath="$PROJECT_DIR$/Lect_21_BinaryTree/Lect_21_BinaryTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_22_BinarySearchTree/Lect_22_BinarySearchTree.iml" filepath="$PROJECT_DIR$/Lect_22_BinarySearchTree/Lect_22_BinarySearchTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lect_25_Heap/Lect_25_Heap.iml" filepath="$PROJECT_DIR$/Lect_25_Heap/Lect_25_Heap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_26_HashMap/Lect_26_HashMap.iml" filepath="$PROJECT_DIR$/Lect_26_HashMap/Lect_26_HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_27_Graphs/Lect_27_Graphs.iml" filepath="$PROJECT_DIR$/Lect_27_Graphs/Lect_27_Graphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lect_30_DP/Lect_30_DP.iml" filepath="$PROJECT_DIR$/Lect_30_DP/Lect_30_DP.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOPs_Practice/OOPs_Practice.iml" filepath="$PROJECT_DIR$/OOPs_Practice/OOPs_Practice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
     </modules>
   </component>
 </project>

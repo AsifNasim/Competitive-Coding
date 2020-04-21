@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Generic_Tree {
@@ -45,6 +47,62 @@ public class Generic_Tree {
         System.out.println(root.value);
         for (int i = 0; i < root.children.size(); i++) {
             display(root.children.get(i));
+        }
+    }
+
+    public int countNode(){
+        return countNode(root);
+    }
+
+    private int countNode(Node root) {
+        int count = 1;
+        if(root == null){
+            return 0;
+        }
+        else{
+            for (int i = 0; i < root.children.size(); i++) {
+                count += countNode(root.children.get(i));
+            }
+        }
+        return count;
+    }
+
+    public int MaxNode(){
+        int max = root.value;
+       return MaxNode(root,max);
+    }
+
+    private int MaxNode(Node root, int max) {
+        if(root == null){
+            return 0;
+        }
+
+        if(max < root.value){
+            max = root.value;
+        }
+        for (int i = 0; i < root.children.size(); i++) {
+
+           max = MaxNode(root.children.get(i),max);
+        }
+        return max;
+    }
+    public void levelOrder(){
+        levelOrder(root);
+    }
+
+    private void levelOrder(Node root) {
+        if(root == null){
+            return;
+        }
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            Node temp = queue.remove();
+            System.out.println(temp.value);
+            for (int i = 0; i < temp.children.size(); i++) {
+                queue.add(temp.children.get(i));
+            }
         }
     }
 }

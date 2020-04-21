@@ -1,4 +1,5 @@
 import java.util.Scanner;
+/*Linear Search*/
 
 public class ArrayRec {
     static Scanner s = new Scanner(System.in);

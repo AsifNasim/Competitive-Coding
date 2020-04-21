@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -81,6 +84,84 @@ public class BinaryTree {
         }
         return Math.max(height(root.left), height(root.right))+1;
     }
+    public boolean isPresent(int target){
+        return isPresent(root, target);
+    }
+
+    private boolean isPresent(Node root, int k){
+        if(root == null){
+            return false;
+        }
+        if (root.value == k){
+            return true;
+        }
+
+       return isPresent(root.left,k) || isPresent(root.right,k);
+
+
+    }
+
+    public void levelOrderPrint(){
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (! queue.isEmpty()){
+            Node temp = queue.remove();
+            System.out.print(temp.value+" ");
+
+            if(temp.left != null){
+                queue.add(temp.left);
+            }
+            if(temp.right != null){
+                queue.add(temp.right);
+            }
+        }
+    }
+    public void Atlevel(int k){
+        AtLevel(root, k);
+    }
+
+    private void AtLevel(Node node,int k){
+        if(node == null){
+            return;
+        }
+
+        if(k == 0){
+            System.out.print(node.value+" ");
+        }
+
+        AtLevel(node.left, k-1);
+        AtLevel(node.right, k-1);
+    }
+
+//    public void AtLevelPrint(int level){
+//        int k =0;
+//        int p =0;
+//        ArrayList list = new ArrayList();
+//        Queue<Node> queue = new LinkedList<>();
+//        queue.add(root);
+//
+//        while (! queue.isEmpty()){
+//            Node temp = queue.remove();
+//            if(temp.left != null){
+//                k = k+1;
+//                if(k == level){
+//                    list.add(temp.left);
+//                }
+//                queue.add(temp.left);
+//            }
+//            if(temp.right != null){
+//                p = p+1;
+//                if(p == level){
+//                    list.add(temp.right);
+//                }
+//                queue.add(temp.right);
+//            }
+//        }
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i));
+//        }
+//    }
 
 
 }

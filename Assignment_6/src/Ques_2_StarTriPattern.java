@@ -13,8 +13,9 @@ public class Ques_2_StarTriPattern {
             return;
         }
         if(row == col){ // to jump on next row
-            System.out.println();
+
             pattern(row-1, 0);
+            System.out.println();
             return;
         }
         pattern(row, col+1);

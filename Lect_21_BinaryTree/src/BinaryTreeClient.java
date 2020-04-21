@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class BinaryTreeClient {
@@ -9,5 +10,7 @@ public class BinaryTreeClient {
         tree.insert(s);
         tree.insert(s);
         tree.display();
+        System.out.println(tree.isPresent(3));
+        tree.levelOrderPrint();
     }
 }

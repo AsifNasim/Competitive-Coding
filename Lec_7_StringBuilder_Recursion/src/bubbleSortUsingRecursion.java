@@ -1,3 +1,5 @@
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Scanner;
 
 public class bubbleSortUsingRecursion {
@@ -17,12 +19,13 @@ public class bubbleSortUsingRecursion {
         if(sI == eI){
             return ;
         }
+        bubbleSort(arr, sI + 1, eI-1);
         if(arr[sI]>arr[sI+1]){
             int temp = arr[sI];
             arr[sI] = arr[sI + 1];
             arr[sI+1] = temp;
         }
-        bubbleSort(arr, sI + 1, eI-1);
+
     }
 
     private static void display(int[] arr) {

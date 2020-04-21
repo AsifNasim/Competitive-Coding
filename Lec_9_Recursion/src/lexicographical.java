@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class lexicographical {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        String str = s.nextLine();
+        String str = s.next();
         int [] ch  = frequency(str);
         int length = s.nextInt();
         permute("",ch, length);

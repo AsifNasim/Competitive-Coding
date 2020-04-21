@@ -5,8 +5,8 @@ public class patternUsingrecursion {
 
     public static void main(String[] args) {
         int row = s.nextInt();
-        int col = s.nextInt();
-        pattern(row, col);
+//        int col = s.nextInt();
+        pattern(row, 0);
     }
 
     private static void pattern(int row, int col) {
