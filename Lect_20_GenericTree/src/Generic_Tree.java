@@ -105,4 +105,24 @@ public class Generic_Tree {
             }
         }
     }
+
+    public void AtLevelK(int k){
+        AtLevelK(root, k);
+    }
+
+    private void AtLevelK(Node root, int k) {
+        if(root == null){
+            return;
+        }
+
+        if(k == 0){
+            System.out.println(root.value);
+        }
+
+        for (int i = 0; i < root.children.size(); i++) {
+            AtLevelK(root.children.get(i), k-1);
+        }
+
+    }
+
 }

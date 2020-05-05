@@ -9,5 +9,6 @@ public class Generic_TreeClient {
         tree.display();
         System.out.println("Total number of nodes: " + tree.countNode());
         System.out.println("Max node in the tree: "+ tree.MaxNode());
+        tree.AtLevelK(1);
     }
 }
