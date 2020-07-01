@@ -2,6 +2,9 @@ public class LinkedList {
     private Node head;
     private Node tail;
     public int size = 0;
+
+
+
     public class Node {
         int value;
         Node next;

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class BinarySearch_Tree {
     private Node root;
-    class Node{
+    class Node{ 
         int height;
         int value;
         Node left;
@@ -188,4 +188,42 @@ public class BinarySearch_Tree {
 
         return (left && right);
     }
+    public int max(){
+        return max(this.root);
+    }
+
+    private int max(Node node) {
+        if(node.right ==  null){
+            return node.value;
+        }
+        return max(node.right);
+    }
+    private void add(int item){
+        add(this.root, item);
+    }
+
+    private void add(Node node, int item) {
+        if(item > node.value){
+            if(node.right == null){
+                Node nn = new Node(item);
+                node.right = nn;
+            } else
+            {
+                add(node.right, item);
+            }
+
+            if(node.left == null){
+                Node nn = new Node(item);
+                node.left = nn;
+            } else
+            {
+                add(node.left, item);
+            }
+
+        }
+    }
+
+    
+
 }
+ 

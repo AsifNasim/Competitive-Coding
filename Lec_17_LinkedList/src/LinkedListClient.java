@@ -31,7 +31,7 @@ public class LinkedListClient {
 //        list.display();
         System.out.println(list.kthFromLast(2));
 //        System.out.println(list.OddEven(list));
-        System.out.println(list.OddEvenBetter(list));
+//        System.out.println(list.OddEvenBetter(list));
     }
 
 

@@ -21,11 +21,18 @@ public class Ques_12_PairSum {
         for (int i = 0; i <arr.length; i++) {
             for (int j = i+1; j <arr.length; j++) {
                 if(arr[i] + arr[j] == target && i != j ){
-                    System.out.print(arr[i]+" "+arr[j]);
+
+                    if(arr[i] < arr[j]){
+                        System.out.println(arr[i]+" "+arr[j]);
+                    }
+                    else{
+                        System.out.println(arr[j]+" "+arr[i]);
+                    }
                     break;
                 }
-                System.out.println();
+//                System.out.println();
             }
         }
+        System.out.println();
     }
 }

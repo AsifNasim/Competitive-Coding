@@ -22,7 +22,7 @@ public class MergeSort {
         }
         int mid = arr.length/2;
         int [] first = mergeSort(Arrays.copyOfRange(arr, 0, mid));
-        int [] second = mergeSort(Arrays.copyOfRange(arr, mid, arr.length));
+        int [] second = mergeSort(Arrays.copyOfRange(arr, mid+1, arr.length-1));
 
         return merge(first, second);
     }

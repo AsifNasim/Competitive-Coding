@@ -38,8 +38,6 @@ public class class_kRotation {
     }
 
     private static void reverse(int [] arr, int start, int end) {
-        start = 0;
-        end = arr.length-1;
         while (start <= end ){
             int temp = arr[start];
             arr[start] = arr[end];

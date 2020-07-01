@@ -9,7 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/Assignment_5/Assignment_5.iml" filepath="$PROJECT_DIR$/Assignment_5/Assignment_5.iml" />
       <module fileurl="file://$PROJECT_DIR$/Assignment_6/Assignment_6.iml" filepath="$PROJECT_DIR$/Assignment_6/Assignment_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lec_10_Backtracking/Backtracking.iml" filepath="$PROJECT_DIR$/Lec_10_Backtracking/Backtracking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeZen/CodeZen.iml" filepath="$PROJECT_DIR$/CodeZen/CodeZen.iml" />
       <module fileurl="file://$PROJECT_DIR$/CodingBlocks.iml" filepath="$PROJECT_DIR$/CodingBlocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GKCS/GKCS.iml" filepath="$PROJECT_DIR$/GKCS/GKCS.iml" />
       <module fileurl="file://$PROJECT_DIR$/GenTree/GenTree.iml" filepath="$PROJECT_DIR$/GenTree/GenTree.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hackerrank_Practice/Hackerrank_Practice.iml" filepath="$PROJECT_DIR$/Hackerrank_Practice/Hackerrank_Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lec-18_LL/Lec-18_LL.iml" filepath="$PROJECT_DIR$/Lec-18_LL/Lec-18_LL.iml" />
@@ -30,6 +32,8 @@
       <module fileurl="file://$PROJECT_DIR$/Lect_27_Graphs/Lect_27_Graphs.iml" filepath="$PROJECT_DIR$/Lect_27_Graphs/Lect_27_Graphs.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lect_30_DP/Lect_30_DP.iml" filepath="$PROJECT_DIR$/Lect_30_DP/Lect_30_DP.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOPs_Practice/OOPs_Practice.iml" filepath="$PROJECT_DIR$/OOPs_Practice/OOPs_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Revision/Revision.iml" filepath="$PROJECT_DIR$/Revision/Revision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StackAndQueues/StackAndQueues.iml" filepath="$PROJECT_DIR$/StackAndQueues/StackAndQueues.iml" />
     </modules>
   </component>
 </project>
